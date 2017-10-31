@@ -186,7 +186,7 @@ class BasicLayout extends React.PureComponent {
           urgent: 'red',
           doing: 'gold',
         })[newNotice.status];
-        newNotice.extra = <Tag color={color}>{newNotice.extra}</Tag>;
+        newNotice.extra = <Tag color={color} style={{ marginRight: 0 }}>{newNotice.extra}</Tag>;
       }
       return newNotice;
     });
@@ -248,7 +248,6 @@ class BasicLayout extends React.PureComponent {
           trigger={null}
           collapsible
           collapsed={collapsed}
-          collapsedWidth={80}
           breakpoint="md"
           onCollapse={this.onCollapse}
           width={256}

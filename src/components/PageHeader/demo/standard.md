@@ -14,7 +14,7 @@ const { Description } = DescriptionList;
 const ButtonGroup = Button.Group;
 
 const description = (
-  <DescriptionList col="2">
+  <DescriptionList size="small" col="2">
     <Description term="创建人">曲丽丽</Description>
     <Description term="订购产品">XX 服务</Description>
     <Description term="创建时间">2017-07-07</Description>
@@ -82,7 +82,7 @@ ReactDOM.render(
   <div>
     <PageHeader
       title="单号：234231029431"
-      logo={<img alt="" src="https://gw.alipayobjects.com/zos/rmsportal/JcBAEvlHGhVvBekIJCWT.svg" />}
+      logo={<img alt="" src="https://gw.alipayobjects.com/zos/rmsportal/nxkuOJlFJuAUhzlMTCEe.png" />}
       action={action}
       content={description}
       extraContent={extra}
