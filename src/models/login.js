@@ -47,6 +47,15 @@ export default {
         payload: false,
       });
     },
+    *logout({ payload, callback }, { put }) {
+      yield put({
+        type: 'logoutHandle',
+        payload,
+      });
+      if (callback) {
+        callback();
+      }
+    },
   },
 
   reducers: {
