@@ -1,5 +1,4 @@
 @import "~antd/lib/style/themes/default.less";
-@import "../../../utils/utils.less";
 
 .pie {
   position: relative;
@@ -81,15 +80,13 @@
   }
 }
 
-@media screen and (max-width: @screen-sm) {
-  .pie {
-    &.hasLegend .chart {
-      width: 100%;
-      margin: 0 0 32px 0;
-    }
-    .legend {
-      position: static;
-      transform: none;
-    }
+.legendBlock {
+  &.hasLegend .chart {
+    width: 100%;
+    margin: 0 0 32px 0;
+  }
+  .legend {
+    position: static;
+    transform: none;
   }
 }
